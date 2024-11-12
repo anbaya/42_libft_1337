@@ -6,7 +6,7 @@
 /*   By: anbaya <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:46:56 by anbaya            #+#    #+#             */
-/*   Updated: 2024/11/01 17:28:16 by anbaya           ###   ########.fr       */
+/*   Updated: 2024/11/06 11:27:31 by anbaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ static char	**spliter(char **arr, const char *s, char c)
 			arr[w] = word_allocate(s, c, i);
 			if (!arr[w])
 			{
-				return (NULL);
+				free(arr);
 			}
 			w++;
 		}

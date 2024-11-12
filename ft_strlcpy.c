@@ -6,7 +6,7 @@
 /*   By: anbaya <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:46:56 by anbaya            #+#    #+#             */
-/*   Updated: 2024/11/01 14:53:52 by anbaya           ###   ########.fr       */
+/*   Updated: 2024/11/01 23:30:36 by anbaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 
 	src_len = ft_strlen(src);
 	if (!size)
-		return (src_len);
-	if (size == 0)
 		return (src_len);
 	i = 0;
 	while (i < size - 1 && src[i])

@@ -48,15 +48,15 @@ static char	*itoing(char *r, long int nb, long int len)
 
 char	*ft_itoa(int n)
 {
-	int		nb;	
+	int		nb;
 	long	len;
 	char	*r;
 
 	if (n == 0)
 	{
 		r = malloc(2);
-		r[1] = '\0';
 		r[0] = '0';
+		r[1] = '\0';
 		return (r);
 	}
 	nb = n;

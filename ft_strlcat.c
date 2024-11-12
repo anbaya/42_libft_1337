@@ -6,7 +6,7 @@
 /*   By: anbaya <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:46:56 by anbaya            #+#    #+#             */
-/*   Updated: 2024/11/01 17:52:28 by anbaya           ###   ########.fr       */
+/*   Updated: 2024/11/01 23:27:53 by anbaya           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	dest_len;
 
 	src_len = ft_strlen(src);
-	if (!size || !dest)
+	if (!size)
 		return (src_len);
 	dest_len = ft_strlen(dest);
 	if (dest_len >= size)

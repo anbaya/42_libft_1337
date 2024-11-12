@@ -38,5 +38,4 @@ fclean: clean
 
 re: clean fclean all
 
-.PHONY: all clean fclean re
-#.SECONDARY:
+.PHONY: all clean bonus
